@@ -1,39 +1,117 @@
-html{
-	margin:0;
-	padding:0;
+	html{
+		margin:0;
+		padding:0;
 }
-body{
-	font-size:14;
-	font-family: georgia;
-	background-color:black;
-	background-position:center;
-	color: white;
-}
-
-li {
-	display:inline;
-
-}
-.input[type=text] {
-    width: 130px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
+	body{
+		font-size:14;
+			font-family: georgia;
+	 			background-image: linear-gradient(to bottom, black, black 50%, grey 50%);
+  			background-repeat: no-repeat;
+		color:white;
 }
 
-/* When the input field gets focus, change its width to 100% */
-input[type=text]:focus {
+	li{
+		display:inline;
 
 }
-p{
+	ul {
+    	list-style-type:none;
+    		margin:0;
+    			padding:0;
+    		overflow:hidden;
+    	background-color:grey;
+}
+
+	li {
+    	float:right;
+    	
+}
+
+	li a {
+    	display:block;
+    		color:white;
+    			text-align:center;
+    		padding:35px 80px;
+    	text-decoration:none;
+}
+
+	li a:hover {
+    	background-color:black;
 
 }
-h1{
-text-align: center;
-color:;
-}
-h2{
+	h1{
+		text-align: center;
+		margin-left: 20px;
 
 }
-h3{
+	.Rub{
+		position:absolute;
+		text-align:center;
+}
+	.SlideRub{
+		text-align:center;
+}
+	.Slide{
+		display:-webkit-flex;
+		display:flex;
+		justify-content: space-between;
+		margin:auto;
+}
 
+.imageSlides {
+	width: 80%;
+	margin: auto;
+}
+
+	.mySlides{
+		width: 80%;
+		height: auto;
+		display:none;
+		margin: auto;
+}
+	.left, .right, .badge{
+		cursor:pointer;
+}
+	.left{
+		/*display:inline-block;*/
+			max-height:25px;
+				max-width:25px;
+			margin: auto;
+		/*position:absolute;*/
+		
+}
+	.right{
+		/*display:inline-block;*/
+			max-height:25px;
+				max-width:25px;
+			margin:auto;
+		/*position:absolute;*/
+}
+	.badge{
+		height:13px;
+			width:16px;
+		padding:10px;
+}
+	.Album,.AlbumRub{
+		text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+	}
+
+	.Album{
+		float:right;
+}
+	.AlbumRub{
+		float:center;
+		margin-top:20px;
+}
+ 
+ 	h3{
+ 		margin-left:100px
+}
+ 	p{
+ 		max-width: 400px;
+ 		float:left;
 }

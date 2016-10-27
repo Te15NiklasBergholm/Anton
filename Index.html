@@ -1,29 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Anton</title>
+	<title>An ton Of Music</title>
+	<link rel="icon" type="image/png" href="antonkillme.PNG">
 	<link rel="stylesheet" type="text/css" href="Style.css">
 	<script type="text/javascript" src="Index.jsc"></script>
-
 </head>
 <body>
 	</style>
-	<div>
-	<form>
-  		<input type="text" name="search" placeholder="Pron...">
-	</form>
+
+
+<div>
+	<h1 class="Rub">An Ton Of Music</h1>
 	<ul>
   		<li><a href="default.asp">Home</a></li>
   		<li><a href="news.asp">Browse</a></li>
   		<li><a href="contact.asp">Contact</a></li>
 	</ul>
+</div>
+<div class="Slide">
+    <div class="left" onclick="plusDivs(-1)">&#10094;</div>
+   		<div id=imageSlide>
+ 			<img class="mySlides" src="Band1.jpg">
+ 			<img class="mySlides" src="Band2.jpg">
+ 			<img class="mySlides" src="Band3.jpg">
+ 		</div>
+    <div class="right" onclick="plusDivs(1)">&#10095;</div>
 	</div>
-	<h1>Site Name</h1>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+</div>
+ 	<div class="center">
+   		<span class="badge" onclick="currentDiv(1)"></span>
+    	<span class="badge" onclick="currentDiv(2)"></span>
+    	<span class="badge" onclick="currentDiv(3)"></span>
+ 	</div>
+<div>
+<script>
+	var slideIndex = 1;
+	showDivs(slideIndex);
+
+	function plusDivs(n) {
+  	showDivs(slideIndex += n);
+}
+
+	function currentDiv(n) {
+	showDivs(slideIndex = n);
+}
+
+	function showDivs(n) {
+	  var i;
+ 	 var x = document.getElementsByClassName("mySlides");
+ 	 var dots = document.getElementsByClassName("badge");
+ 	 if (n > x.length) {slideIndex = 1}
+  	if (n < 1) {slideIndex = x.length}
+  	for (i = 0; i < x.length; i++) {
+  	   x[i].style.display = "none";
+  }
+  	for (i = 0; i < dots.length; i++) {
+    	 dots[i].className = dots[i].className.replace(" badge", "");
+  }
+  	x[slideIndex-1].style.display = "block";
+  	dots[slideIndex-1].className += "badge";
+}
+</script>
+</div>
+	<div class="AlbumRub">
+		<h1>Disturbed</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.</p>
+		</div>
+<div class="Album">
+	<h3>Immortalized</h3>
+		<img src="Album1.jpg">
+</div>
 </body>
 </html>
